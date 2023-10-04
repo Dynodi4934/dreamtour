@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+    <link rel="stylesheet" href="styles.css">
+    <title>Hotel Room Page</title>
+    <style>
+/* Your CSS styles for the page go here */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* Your CSS styles for the page go here */
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo span {
+    font-size: 24px; /* Adjust the font size as needed */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.search-bar button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.search-bar button i {
+    font-size: 20px; /* Adjust the icon size as needed */
+    color: #fff;
+}
+
+/* ... Rest of your CSS ... */
+
+
+/* ... Rest of your CSS ... */
+
+
+
+.room-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.room-image img {
+    max-width: 100%;
+    height: auto;
+    width:700px;
+}
+
+.room-info {
+    margin-left: 20px;
+}
+
+.stars {
+    color: #FFD700;
+}
+
+.stars .star::before {
+    content: '\2605'; /* Unicode character for a star */
+}
+
+.address {
+    font-style: italic;
+    color: #555;
+}
+
+.features {
+    color: #555;
+    display: flex;
+    align-items: center;
+}
+
+.features .icon {
+    width: 20px; /* Adjust the size as needed */
+    height: 20px; /* Adjust the size as needed */
+    margin-right: 5px;
+}
+
+.entire-home {
+    font-size: 14px; /* Adjust the font size as needed */
+    font-weight: bold;
+}
+
+.description {
+    margin-top: 5px;
+    color: #555;
+}
+
+.reviews {
+    margin: 20px;
+}
+
+.review {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.review img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.review-details {
+    flex-grow: 1;
+}
+
+.review h3 {
+    margin: 0;
+}
+
+.unchecked{
+  font-size:24px;
+  color:black;
+ 
+}
+
+.fas.fa-star {
+    font-size: 24px; /* Adjust the size as needed */
+    color: #FFD700; /* Adjust the color as needed */
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.social-media a {
+    font-size: 24px; /* Adjust the icon size as needed */
+    margin: 0 10px;
+    color: #fff;
+}
+
+.book-now {
+    background-color: #FF0000;
+    color: #fff;
+    border: none;
+    padding: 20px 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    
+}
+
+
+</style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <span>DreamTour</span>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button><i class="fa fa-search"></i></button>
+            </div>
+        </nav>
+    </header>
+
+<!-- ... Previous HTML code ... -->
+
+<section class="room-details">
+    <div class="room-image">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuGH8wD7ZUWatxmwqTfjLY9fwS_wNH3GAYDA&usqp=CAU" alt="Hotel Room">
+    </div>
+    <div class="room-info">
+        <h2>Deluxe Double Room</h2>
+        <p class="address">London, England, United Kingdom</p>
+        <div class="features">
+            <p>1 Bedroom, 1 Bathroom, WiFi, AC</p>
+        </div>
+      <!-- <div class="features">
+            <img src="entire-home-icon.png" alt="Entire Home Icon" class="icon">
+            <p class="entire-home">Entire home</p>
+        </div>-->
+        <p class="description">You have the entire flat for yourself.</p>
+        <div class="stars">
+            <span class="star"></span>
+            <span class="star"></span>
+            <span class="star"></span>
+            <span class="star"></span>
+            <span class="star"></span>
+        </div>
+        <p class="price">$150 per night</p>
+        <button class="book-now">Book Now</button>
+    </div>
+</section>
+
+<!-- ... Remaining HTML code ... -->
+
+
+<section class="reviews">
+    <h2>Guest Reviews</h2>
+    <div class="review">
+        <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw3NjA4Mjc3NHx8ZW58MHx8fHx8&w=1000&q=80" alt="John Doe">
+        <div class="review-details">
+            <h3>John Doe</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>Impeccably clean room, cozy bed, great view, and attentive service made for a delightful stay at this hotel.</p>
+        </div>
+    </div>
+
+    <div class="review">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9hmjzyyGKcIocoHL7RbLb39f22wYtZfo5MG5Nxxi1-6YoAEh7uTSPZje2D6ZvF2vI1i8&usqp=CAU" alt="Jane Smith">
+        <div class="review-details">
+            <h3>Jane Smith</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>The hotel room was impeccably clean and well-maintained. The bed was comfortable, providing a good night's sleep. The room had all the necessary amenities and a great view. The staff was friendly and responsive to any requests. Overall, it was a pleasant stay.</p>
+        </div>
+    </div>
+
+    <div class="review">
+        <img src="https://m.media-amazon.com/images/I/71jfZpjyA9L._AC_UY1100_.jpg" alt="David Johnson">
+        <div class="review-details">
+            <h3>David Johnson</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa fa-star unchecked"></i>
+                <i class="fa fa-star unchecked"></i>
+            </div>
+            <p>Beautiful view, comfortable bed, top-notch</p>
+        </div>
+    </div>
+
+    <!-- Add more reviews as needed -->
+
+</section>
+
+<!-- ... Remaining HTML code ... -->
+
+
+<footer>
+      <p>&copy; all corporate claim by dreamtour</p>
+    <div class="social-media">
+        <a href="https://www.facebook.com/debjyotipal.debjyotipal.9?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com/debjyotipal.email"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+
+</footer>
+</body>
+</html>

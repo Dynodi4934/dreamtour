@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Coming Soon</title>
+  <style>body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.coming-soon {
+  text-align: center;
+}
+
+.clock {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 5px solid #000;
+  border-radius: 50%;
+}
+
+.hour-hand, .minute-hand, .second-hand {
+  position: absolute;
+  background: #000;
+  transform-origin: center bottom;
+  transform: rotate(0deg); /* Initial rotation */
+}
+
+.hour-hand {
+  width: 8px;
+  height: 50px;
+  top: 50px;
+  left: 96px;
+  animation: rotateClockHands 43200s linear infinite;
+}
+
+.minute-hand {
+  width: 6px;
+  height: 70px;
+  top: 30px;
+  left: 97px;
+  animation: rotateClockHands 3600s linear infinite;
+}
+
+.second-hand {
+  width: 2px;
+  height: 90px;
+  top: 10px;
+  left: 99px;
+  animation: rotateClockHands 60s linear infinite;
+}
+
+@keyframes rotateClockHands {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}</style>
+</head>
+<body>
+  <div class="coming-soon">
+    <h1>Coming Soon!</h1>
+    <div class="clock">
+      <div class="hour-hand"></div>
+      <div class="minute-hand"></div>
+      <div class="second-hand"></div>
+    </div>
+  </div>
+</body>
+</html>
